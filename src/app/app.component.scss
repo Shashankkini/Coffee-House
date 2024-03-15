@@ -1,0 +1,15 @@
+.background-image-container {
+    /* Set the background image */
+    background-image: url('/assets/coffeeBackground.jpg');
+    position: absolute;
+    /* Adjust background properties as needed */
+    background-size: cover; 
+    background-size: 100%;/* Cover the entire element */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+     width: 100%;
+     height: 100%;
+    
+  }
+  
+  

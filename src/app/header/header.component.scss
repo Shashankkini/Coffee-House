@@ -1,0 +1,48 @@
+.example-spacer {
+    flex: 1 1 auto;
+
+  }
+
+  .mat-toolbar.mat-primary {
+    background: transparent;
+    color: #fff;
+   // position: absolute;
+  }
+
+  .Menu{
+    background-color: transparent;
+     color: white;
+    font-size: 23px;
+    font-weight:lighter;
+    font-style: oblique;
+     margin-right: 100px; 
+     margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  #MarginRight{
+    margin-right: 200px;
+  }
+
+  hr{
+    border:  1px solid #7e7d7d;
+  }
+
+  .Menu:hover{
+    color: rgb(153, 107, 8);
+  }
+
+  .ShopName{
+    background-color: transparent;
+    color: white;
+   font-size: 40px;
+   font-weight:bold;
+   font-style: oblique;
+    margin-right: 100px; 
+    margin-left: 50px;
+   font-family: 'Times New Roman', Times, serif;
+  }
+
+  .ShopName:hover{
+    color: rgb(153, 107, 8);
+  }
