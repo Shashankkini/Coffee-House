@@ -35,6 +35,20 @@ public class CoffeeHouseServiceImpl implements CoffeeHouseService{
 		//return CoffeeHouseMapper.mapToCoffeeHouseDto(saved);
 	}
 
+	@Override
+	public List<CoffeeHouseDto> getAllAccount() {
+		List<CoffeeHouseEntity> getEntities = coffeeHouseRepository.findAll();
+	 return getEntities.stream()
+				.map((item)->CoffeeHouseMapper.mapToCoffeeHouseDto(item)).
+				collect(Collectors.toList());
+	}
+
+	@Override
+	public void deleteAllAccount() {
+		// TODO Auto-generated method stub
+		 coffeeHouseRepository.deleteAll();
+	}
+
 }
 
 
