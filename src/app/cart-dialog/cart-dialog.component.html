@@ -1,0 +1,21 @@
+<div style="display: grid;">
+<div *ngFor="let item of items">
+    <div *ngIf="item. conditionFlag"  class="card" style=" margin: 10px;">
+        <mat-card><h2>{{ item.name }}</h2>
+            <div >
+             Total:{{item.totalAmout}}<br/>
+             item: {{item.items}}<br/>
+              
+
+            </div>
+        </mat-card>
+      
+      
+    </div>
+  </div>
+</div>
+
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="primary" mat-dialog-close>Close</button>
+    <button style="margin-left: 8px;" mat-raised-button color="accent" (click)="saving()" [disabled]="isDisabled">Confirm</button>
+</div>

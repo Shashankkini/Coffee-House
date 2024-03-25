@@ -1,6 +1,7 @@
 .example-card {
     max-width: 400px;
     margin-bottom: 3px;
+    background-color: rgb(177, 150, 93);;
   }
   
   .example-header-image {
@@ -20,4 +21,15 @@
     border: none;
     padding: 1rem 4rem;
     vertical-align: middle;
+  }
+
+  .totalCard{
+    max-width: 300px;
+    min-width: 100px;
+    max-height: 20px;
+    margin-left: 800px;
+    background-color: rgb(153, 107, 8);;
+    padding: 10px;
+    text-align: center;
+    color: white;
   }

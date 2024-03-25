@@ -18,6 +18,13 @@ import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
+import { CartDialogComponent } from './cart-dialog/cart-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http';
+import { SoldComponent } from './sold/sold.component';
+
+
 
 @NgModule({
   declarations: [
@@ -28,6 +35,8 @@ import {MatCardModule} from '@angular/material/card';
     MenuComponent,
     AboutComponent,
     ContactComponent,
+    CartDialogComponent,
+    SoldComponent,
 
   ],
   imports: [
@@ -41,7 +50,11 @@ import {MatCardModule} from '@angular/material/card';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

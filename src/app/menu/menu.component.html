@@ -1,5 +1,14 @@
 <div>
+  <div style="display:flex;">
+  <button mat-flat-button (click)="openDialog()"><mat-icon>shopping_cart</mat-icon></button>
    
+  
+        <mat-card class="totalCard">
+          <span style=""><h3>Total:   {{total}}</h3></span>
+        </mat-card>
+      </div>
+
+
     <div class="parent">
         <div class="child">
 
@@ -13,8 +22,10 @@
                     <p>
                         Strong, concentrated coffee brewed by forcing hot water through finely-ground coffee beans.
                       </p>
-
-                      <button style="margin-left: 30px;" mat-raised-button  (click)="add()">Add to cart</button>
+                      <span>item:{{item[0]}}</span>
+                        
+                      <button style="margin-left: 30px;" mat-raised-button  (click)=" addingToCart(1)">Add to cart</button>
+                      <button style="margin-left: 30px;" mat-raised-button  (click)=" removeFromCart(1)" color="warn">Remove</button>
   
                 </mat-card-content>
               </mat-card>
@@ -33,8 +44,9 @@
             <p>
                 Classic Italian dish with a thin crust topped with sauce, cheese, and various toppings.
               </p>
-              <button style="margin-left: 30px;" mat-raised-button  (click)="add()">Add to cart</button>
-  
+              <span>item:{{item[1]}}</span>
+              <button style="margin-left: 30px;" mat-raised-button  (click)="addingToCart(2)">Add to cart</button>
+              <button style="margin-left: 30px;" mat-raised-button  (click)=" removeFromCart(2)" color="warn" >Remove</button>
         </mat-card-content>
       </mat-card>
 </div>
@@ -50,8 +62,9 @@
             <p>
                 Sandwich with a cooked meat patty between two buns, served with toppings and condiments.
               </p>
-              <button style="margin-left: 30px;" mat-raised-button  (click)="add()">Add to cart</button>
-  
+              <span>item:{{item[2]}}</span>
+              <button style="margin-left: 30px;" mat-raised-button  (click)="addingToCart(3)">Add to cart</button>
+              <button style="margin-left: 30px;" mat-raised-button  (click)=" removeFromCart(3)" color="warn">Remove</button>
         </mat-card-content>
       </mat-card>
 </div>
@@ -69,8 +82,9 @@
             <p>
                 Simple, brewed coffee without any additives, known for its bold flavor.
               </p>
-              <button style="margin-left: 30px;" mat-raised-button  (click)="add()">Add to cart</button>
-  
+              <span>item:{{item[3]}}</span>
+              <button style="margin-left: 30px;" mat-raised-button  (click)="addingToCart(4)">Add to cart</button>
+              <button style="margin-left: 30px;" mat-raised-button  (click)=" removeFromCart(4)" color="warn">Remove</button>
         </mat-card-content>
       </mat-card>
 </div>
@@ -87,8 +101,9 @@
             <p>
                 Soft, Indian flatbread made with refined flour, yeast, and brushed with butter.
               </p>
-              <button style="margin-left: 30px;" mat-raised-button  (click)="add()">Add to cart</button>
-  
+              <span>item:{{item[4]}}</span>
+              <button style="margin-left: 30px;" mat-raised-button  (click)="addingToCart(5)">Add to cart</button>
+              <button style="margin-left: 30px;" mat-raised-button  (click)=" removeFromCart(5)" color="warn">Remove</button>
         </mat-card-content>
       </mat-card>
 </div>
@@ -105,7 +120,9 @@
             <p>
                 Crispy cauliflower florets tossed in a flavorful Indo-Chinese sauce.
               </p>
-              <button style="margin-left: 30px;" mat-raised-button  (click)="add()">Add to cart</button>
+              <span>item:{{item[5]}}</span>
+              <button style="margin-left: 30px;" mat-raised-button  (click)="addingToCart(6)">Add to cart</button>
+              <button style="margin-left: 30px;" mat-raised-button  (click)=" removeFromCart(6)" color="warn">Remove</button>
   
         </mat-card-content>
       </mat-card>
